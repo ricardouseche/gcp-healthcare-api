@@ -40,7 +40,9 @@ Start within the `terraform/` directory:
 
 1. `terraform plan` to plan out resource creations.
 2. `terraform apply` to create resources.
-3. `terraform destroy` to destroy resources once you're finished with this example.
+3. `terraform destroy` to destroy resources once you're finished with this example. 
+
+**Note: The only resource that will not be deleted will be the de-identified dataset as that one was created via API. Make sure to manually delete it at the end.**
 
 This will create all of the needed resources to process DICOM images.
 
