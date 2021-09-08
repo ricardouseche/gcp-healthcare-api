@@ -1,6 +1,8 @@
+variable region {}
+
 resource "google_healthcare_dataset" "default" {
   name      = "example-dataset"
-  location  = "{GCP_REGION}"
+  location  = var.region
   time_zone = "America/Chicago"
 }
 

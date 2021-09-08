@@ -10,4 +10,5 @@ module "function" {
 
 module "healthcare" {
     source = "./modules/healthcare"
+    region = var.region
 }
