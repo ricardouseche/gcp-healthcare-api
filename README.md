@@ -36,12 +36,25 @@ DICOM instances are available online for free. The samples contained here are fr
 
 **Usage**
 
-Within the `terraform/` directory:
+Start within the `terraform/` directory:
 
 1. `terraform plan` to plan out resource creations.
 2. `terraform apply` to create resources.
-3. Use `upload.sh` to upload DICOM instances to the Healthcare engine.
-4. `terraform destroy` to destroy resources once you're finished with this example.
+3. `terraform destroy` to destroy resources once you're finished with this example.
+
+This will create all of the needed resources to process DICOM images.
+
+Within `dicoms/`:
+
+1. Replace the project ID and GCP region to work with in the `upload.sh` script. 
+2. Run `upload.sh`.
+
+Within `export/`:
+
+1. Replace the GCP region in `export_original.sh` and `export_final.sh`.
+2. Use `export_original.sh` to get a JPEG export of the originally uploaded DICOM file.
+3. Use `export_final.sh` to get a JPEG export of the de-identified DICOM file.
+
 
 # Viewing results of the de-identification process
 
