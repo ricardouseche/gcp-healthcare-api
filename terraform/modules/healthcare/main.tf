@@ -21,4 +21,5 @@ resource "google_pubsub_topic" "topic" {
 
 resource "google_storage_bucket" "healthcare_export" {
   name = "healthcare_export"
+  force_destroy = true
 }
