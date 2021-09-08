@@ -2,7 +2,7 @@
 This repository serves as an example on how to use Google's Healthcare Data Engine to run de-identification procedures on DICOM instances. 
 
 ## Objective
-The system will de-identify DICOM instances that are uploaded to a DICOM datastore in the Healthcare Data Engine.
+The system will de-identify DICOM instances that are uploaded to a DICOM datastore in the Healthcare Data Engine. This process will remove all burnt-in text on the X-ray images. Refer to the [documentation](https://cloud.google.com/healthcare/docs/how-tos/dicom-deidentify) for other de-identification options.
 
 The process is as follows:
 1. A DICOM instance is uploaded to the datastore.
@@ -41,3 +41,15 @@ Within the `terraform/` directory:
 2. `terraform apply` to create resources.
 3. Use `upload.sh` to upload DICOM instances to the Healthcare engine.
 4. `terraform destroy` to destroy resources once you're finished with this example.
+
+# Viewing results of the de-identification process
+
+Working with DICOM instances can be a bit difficult without setting up a DICOM viewer. This repo **does not** deploy a DICOM viewer. However, you can export DICOM instances contained within the Healthcare Data Engine to a Cloud Storage bucket to compare the original vs the processed image.
+
+Samples of the before and after are available within the `img/` directory.
+
+Before:
+![Before de-id](img/Before%20de-id.jpg)
+
+After:
+![After de-id](img/After%20de-id.jpg)
