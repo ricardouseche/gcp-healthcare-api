@@ -1,3 +1,5 @@
+# Replace {PROJECT_ID} and {GCP_REGION} with your project ID and desired region.
+
 curl -X POST \
     -H "Content-Type: application/dicom" \
     -H "Authorization: Bearer $(gcloud auth application-default print-access-token)" \
