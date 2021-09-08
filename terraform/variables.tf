@@ -1,6 +1,8 @@
 variable "project" {
-	default = "{PROJECT_ID}"
+	type = string
+	description = "This is the project ID used to deploy resources."
 }
 variable "region" {
-	default = "{GCP_REGION}"
+	type = string
+	description = "This is the region used to deploy resources."
 }
