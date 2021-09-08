@@ -32,7 +32,7 @@ DICOM instances are available online for free. The samples contained here are fr
 **Prerequisites**
 
 1. Make sure you have replaced `{PROJECT_ID}`, `{GCP_REGION}` with the relevant details for your case.
-2. Create a Terraform service account and place the service account key in a JSON format within the `terraform/` directory.
+2. Make sure you have `gcloud` installed to be able to authenticate with GCP.
 
 **Usage**
 Within the `terraform/` directory:

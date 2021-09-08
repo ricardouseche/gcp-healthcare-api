@@ -1,5 +1,4 @@
 provider "google" {
-    credentials = file("tf-key.json")
     project = var.project
     region = var.region
 }
