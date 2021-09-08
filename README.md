@@ -35,6 +35,7 @@ DICOM instances are available online for free. The samples contained here are fr
 2. Make sure you have `gcloud` installed to be able to authenticate with GCP.
 
 **Usage**
+
 Within the `terraform/` directory:
 
 1. `terraform plan` to plan out resource creations.
